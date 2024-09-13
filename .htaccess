@@ -1,0 +1,76 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_USER_AGENT} HTTrack [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} SiteSucker [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebCopier [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebReaper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebStripper [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} WebZIP [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Offline Explorer [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Teleport [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} wget [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} curl [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} libwww [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} phpcrawl [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} nutch [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} scrapy [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} MJ12bot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} AhrefsBot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} SemrushBot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ia_archiver [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Baiduspider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Yandex [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Sogou [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Exabot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ichiro [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} sogou spider [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} YoudaoBot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} YetiBOT [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} rogerbot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Xenu [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} SEOkicks-Robot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Mediapartners-Google [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} Adsbot-Google [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} saveweb2zip [NC]  
+RewriteRule .* - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} ^-?$
+RewriteRule .* - [F,L]
+
+<IfModule mod_ratelimit.c>
+    SetEnvIf User-Agent ".*" RATE_LIMIT
+    <Location />
+        SetOutputFilter RATE_LIMIT
+        SetEnv rate-limit 5
+        SetEnv rate-initial-burst 10
+    </Location>
+</IfModule>
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?mohammedomer\.vip [NC]
+RewriteRule \.(jpg|jpeg|png|gif|bmp|webp|css|js)$ - [NC,F,L]
+
+<Directory "/private">
+    AuthType Basic
+    AuthName "Restricted Area"
+    AuthUserFile /path/to/.htpasswd
+    Require valid-user
+</Directory>
+
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "script-src 'self';"
+</IfModule>
+
+<FilesMatch "\.(htaccess|htpasswd|config|ini|log|sh)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+Options -Indexes
+
+
+User-agent: saveweb2zip
+Disallow: /

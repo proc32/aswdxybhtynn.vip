@@ -1,0 +1,290 @@
+.dark-mode .about-bottom-content-wrap .about-bottom-content p,
+.dark-mode .common-text-link,
+.dark-mode .contact-info-box ul li,
+.dark-mode .contact-info-box ul li a,
+.dark-mode .copyright #back-to-top,
+.dark-mode .copyright p,
+.dark-mode .experience-box h4>span:last-child,
+.dark-mode .experience2-box .experience2-box-header,
+.dark-mode .faq-item .accordion-header button,
+.dark-mode .faq-item .accordion-header button[aria-expanded=true] i,
+.dark-mode .featured-card .content .title,
+.dark-mode .footer-area .footer-big-text,
+.dark-mode .header-wrap .header-local-time-box #coordinates,
+.dark-mode .header-wrap .header-local-time-box #realtime,
+.dark-mode .hero-sec .hero-footer-wrap .hero-footer-right a,
+.dark-mode .hero-sec .hero-footer-wrap p,
+.dark-mode .motivation-sec .motivation-content p,
+.dark-mode .popup-menu ul li a,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #coordinates,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #realtime,
+.dark-mode .pricing-box .pricing-box-header .day-revisions>span,
+.dark-mode .pricing-box .pricing-box-header h4,
+.dark-mode .pricing-sec .pricing-nav li .nav-link,
+.dark-mode .pricing-tooltip .tooltip-content p,
+.dark-mode .section-header2 .title,
+.dark-mode .social-links li a,
+.dark-mode .testimonial-box .testimonial-content p,
+.dark-mode .theme-btn:hover,
+.dark-mode .work-detail-header-infos .work-detail-header-left h1,
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li a:hover,
+.dark-mode .work-detail-text-anim-wrap ul li,
+.dark-mode .work-detail2-content-box p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode strong,
+.section-header p {
+    color: #fff
+}
+
+.dark-mode .common-text-link::before,
+.dark-mode .contact-info-box ul li a::before,
+.dark-mode .copyright #back-to-top::before,
+.dark-mode .experience-box .experience-button-box .experience-button:hover,
+.dark-mode .header-wrap .theme-btn::before,
+.dark-mode .humberg-menu span,
+.dark-mode .link-with-line::before,
+.dark-mode .social-links li a::before,
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li a::before {
+    background: #fff
+}
+
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.dark-mode,
+.dark-mode .popup-menu-wrap,
+.dark-mode .theme-btn::before {
+    background: #000
+}
+
+.dark-mode .header-wrap {
+    border-bottom-color: #161616
+}
+
+.dark-mode .theme-btn {
+    background: #fff;
+    color: #000;
+    border-color: #fff
+}
+
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #coordinates,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #realtime {
+    font-weight: 600
+}
+
+.dark-mode .experience2-box .experience2-box-body p,
+.dark-mode .faq-item .accordion-header button i,
+.dark-mode .header-wrap .header-local-time-box,
+.dark-mode .hero-sec .hero-footer-wrap .hero-footer-right p,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature {
+    color: rgba(255, 255, 255, .6)
+}
+
+.dark-mode .available-status {
+    color: rgba(255, 255, 255, .7)
+}
+
+.dark-mode .featured-card .content .date {
+    color: rgba(255, 255, 255, .75);
+    border-color: #1f1f1f
+}
+
+.dark-mode .contact-info-box h4,
+.dark-mode .featured-card .content .subtitle,
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li span {
+    color: #949494
+}
+
+.dark-mode .contact-sec .contact-form-wrap .contact-header p,
+.dark-mode .experience-box p,
+.dark-mode .favourite-stack-box .content .content-body p,
+.dark-mode .pricing-box .pricing-box-header .discount,
+.dark-mode .pricing-box .pricing-box-header p,
+.dark-mode .pricing-tooltip .tooltip-content ul li,
+.dark-mode .work-detail-text-anim-wrap ul li span,
+.dark-mode .work-detail2-content-box h4 {
+    color: rgba(255, 255, 255, .5)
+}
+
+.landing-page .header-wrap .header-local-time-box .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: var(--font_instrument);
+    letter-spacing: 0;
+    gap: 1px
+}
+
+.dark-mode .experience-popup .experience-popup-content-wrap .close-experience-popup-btn,
+.dark-mode .popup-menu-wrap .popup-menu-header .popup-menu-close-btn .icon {
+    background: 0 0;
+    border: 1px solid #1d1d1d
+}
+
+.landing-page .header-wrap .header-local-time-box .logo span {
+    font-size: 22px
+}
+
+.dark-mode .pricing-box .pricing-box-header .day-revisions>span svg,
+.dark-mode .social-links li a svg {
+    fill: #fff
+}
+
+.dark-mode .header-wrap .theme-btn {
+    background: 0 0;
+    color: #fff
+}
+
+.dark-mode .header-wrap .theme-btn:hover {
+    color: #000
+}
+
+.dark-mode .featured-card {
+    border-color: #1f1f1f
+}
+
+.dark-mode .featured-card .content {
+    background: #0a0a0a
+}
+
+.dark-mode .experience-box,
+.dark-mode .experience-popup .experience-popup-content-wrap,
+.dark-mode .favourite-stack-box,
+.dark-mode .partner-box,
+.dark-mode .testimonial-box {
+    border-color: #000;
+    background: #000
+}
+
+.dark-mode .experience-box .experience-button-box .experience-button {
+    background: #0d0d0d;
+    border: 1px solid #1d1d1d;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s
+}
+
+.dark-mode .experience-box .experience-button-box .experience-button:hover svg {
+    color: #0a0a0a
+}
+
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-content .experience-popup-header .price,
+.dark-mode .theme-btn3 {
+    color: #fff;
+    border-color: #fff
+}
+
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-content .experience-popup-header h3 {
+    border-color: #ffffff1a
+}
+
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-content p,
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-features .experience-popup-feature {
+    color: rgba(255, 255, 255, .55)
+}
+
+.dark-mode .pricing-sec .pricing-nav li .nav-link.active,
+.dark-mode .theme-btn2 {
+    background: #fff;
+    color: #000
+}
+
+.dark-mode .contact-infos-wrap .contact-infos,
+.dark-mode .experience2-box,
+.dark-mode .work-detail2-content-box {
+    border-color: #262626
+}
+
+.dark-mode .favourite-stack-box .content,
+.dark-mode .favourite-stack-box .favourite-stack-box-left {
+    border-color: rgba(255, 255, 255, .06);
+    background: #0d0d0d
+}
+
+.dark-mode .testimonial-box .testimonial-content {
+    background: #0d0d0d;
+    border-color: rgba(255, 255, 255, .1)
+}
+
+.dark-mode .faq-item,
+.dark-mode .faq-item:first-of-type,
+.dark-mode .faq-item:last-of-type {
+    background: #0a0a0a;
+    border-color: #1d1d1d!important
+}
+
+.dark-mode .faq-item .accordion-header button:hover:not([aria-expanded=true]) {
+    background: #0f0f0f
+}
+
+.dark-mode .faq-item .accordion-body p {
+    border-color: #262626;
+    color: rgba(122, 122, 122, .9)
+}
+
+.dark-mode .work-detail-header-infos .work-detail-header-left p {
+    color: #a3a3a3
+}
+
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li {
+    color: #fff;
+    border-color: #262626
+}
+
+.dark-mode .pricing-sec .pricing-nav {
+    border-color: #fff
+}
+
+.dark-mode .pricing-box {
+    background: #0a0a0a;
+    border-color: rgba(255, 255, 255, .07)
+}
+
+.dark-mode .pricing-box .pricing-box-header {
+    background: #0d0d0d;
+    border-color: rgba(255, 255, 255, .04)
+}
+
+.dark-mode .pricing-tooltip .tooltip-btn {
+    color: #fff;
+    background: #0a0a0a;
+    border-color: rgba(255, 255, 255, .07)
+}
+
+.dark-mode .pricing-tooltip .tooltip-content {
+    background: #0a0a0a;
+    border-color: rgba(255, 255, 255, .07);
+    box-shadow: rgba(0, 0, 0, .05) 0 10px 20px 0
+}
+
+.dark-mode .pricing-box .pricing-box-header .discount {
+    border-color: rgba(255, 255, 255, .07)
+}
+
+.dark-mode .pricing-box .pricing-box-features ul li {
+    color: rgba(255, 255, 255, .8)
+}
+
+.dark-mode .pricing-box .pricing-box-features ul li svg {
+    stroke: #fff
+}
+
+.dark-mode .contact-form #ajax-form input,
+.dark-mode .contact-form #ajax-form textarea {
+    color: #fff;
+    background: #0f0f0f
+}
