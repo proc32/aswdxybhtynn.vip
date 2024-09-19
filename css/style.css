@@ -2053,6 +2053,75 @@ img {
     -o-transition: .3s
 }
 
+.featured-card {
+    position: relative;
+    padding: 25px;
+    border: 1px solid rgba(var(--white-color-rgb), 0.20);
+    overflow: hidden;
+    /* Ensures child elements do not overflow */
+}
+
+.featured-card:before {
+    position: absolute;
+    content: '';
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    opacity: 0;
+    transform: scale(0.2, 1);
+    transition: all 500ms ease;
+    background: var(--main-color);
+    background: linear-gradient(to top, var(--main-color) 0%, var(--color-two) 100%);
+}
+
+.featured-card:hover:before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.featured-card:hover .img-box:before {
+    animation: shine 1s;
+}
+
+.img-box:before {
+    position: absolute;
+    top: 0;
+    left: -85%;
+    z-index: 99;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
+    transform: skewX(-25deg);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.title {
+    font-weight: bold;
+}
+
+@keyframes shine {
+    0% {
+        left: -85%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
 .pricing-tooltip .tooltip-content ul li {
     font-size: 13px;
     letter-spacing: .1px;
