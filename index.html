@@ -140,10 +140,77 @@
                             <div class=header-right><a class=theme-btn href="">Navigate Here</a></div>
                         </div>
                     </header>
+                    <div class="hero-sec-content">
+                        <span class="available-status" id="status-text">Currently Procrastinating</span>
+                        <h1>
+                            <span><span class="scroll-animation timeline-anim" data-animation="slide_down">MOHAMMED</span></span>
+                            <span><span class="scroll-animation timeline-anim" data-animation="slide_down">OMER</span></span>
+                        </h1>
+                    </div>
+                    <script>
+                        
+                        // Array of different status options
+                        const statusOptions = [
+                            "AVAILABLE FOR FREELANCE",
+                            "Why are you reading this?",
+                            "Curious? It Seems..",
+                            "Don't fall for me, I'm 4 slots full!",
+                            "Your Mind, My Expertise!",
+                            "You feeling an connection?",
+                            "It's Internet.. Don't get excited!",
+                            "No Promotions!",
+                            "TPDA, TFC, DIS, DOD, SSX, KSA!",
+   // "A woman who supports you.",
+   // "A woman who guides you.",
+   // "A woman who cares for you.",
+//"A woman who loves you.",
+
+   // "What more do you need?",
+    //"Don't seek girls, seek out women!",
+    "all you need is a purpose!",
+    "attention is all you need!",
+
+
+
+
+                        ];
+                    
+                        // Get the current index from local storage or initialize to 0
+                        let currentIndex = localStorage.getItem('statusIndex') ? parseInt(localStorage.getItem('statusIndex')) : 0;
+                    
+                        // Function to update the status text with animation
+                        function updateStatus() {
+                            const statusTextElement = document.getElementById("status-text");
+                    
+                            // Apply fade-out animation
+                            statusTextElement.classList.add('fade-out');
+                    
+                            setTimeout(() => {
+                                // Update the status text
+                                statusTextElement.textContent = statusOptions[currentIndex];
+                    
+                                // Apply fade-in animation
+                                statusTextElement.classList.remove('fade-out');
+                                statusTextElement.classList.add('fade-in');
+                    
+                                // Prepare for the next index
+                                currentIndex = (currentIndex + 1) % statusOptions.length; // Loop back to the start
+                                localStorage.setItem('statusIndex', currentIndex); // Store the updated index
+                            }, 500); // Wait for fade-out to complete before changing text
+                        }
+                    
+                        // Set the initial status text on page load
+                        document.addEventListener('DOMContentLoaded', () => {
+                            updateStatus(); // Call the function to update the status
+                        });
+                    </script>
+                    
+<!------
                     <div class=hero-sec-content><span class=available-status>AVAILABLE FOR FREELANCE</span>
                         <h1><span><span class="scroll-animation timeline-anim" data-animation=slide_down>MOHAMMED</span></span> <span><span class="scroll-animation timeline-anim" data-animation=slide_down>OMER</span></span>
                         </h1>
                     </div>
+------->
                     <div class="scroll-animation hero-footer-wrap" data-animation=slide_down>
                         <p>BASED IN TELENGANA, HYD</p>
                         <div class=hero-footer-right><a class=link-with-line href="https://instagram.com/_mromer_">Psych. Dip. | F.S. Dev. | D. Analyst | BCA</a>
@@ -152,13 +219,14 @@
                 </section>
 
                 <div class="full-image-sec pt-30">
-                    <div class=full-image-box><img alt=about src=images/mohammedomer-developer.png class=scaleDown></div>
+                    <div class=full-image-box><img alt=about src="images/omer-raw3.png" class=scaleDown></div>
                 </div>
 
                 <section class=featured-work-sec>
                     <div class=section-header>
                         <div class=left>
-                            <h3><span><span class="scroll-animation timeline-anim" data-animation=slide_down>FEATURED</span></span> <span><span class="scroll-animation timeline-anim" data-animation=slide_down>WORK</span></span>
+                            <h3><span>
+                                <span class="scroll-animation timeline-anim" data-animation=slide_down>FEATURED</span></span> <span><span class="scroll-animation timeline-anim" data-animation=slide_down>WORK</span></span>
                             </h3>
                         </div>
                         <div class=right>
@@ -330,7 +398,7 @@
                             <p>I have a keen interest in Artificial Intelligence, MERN - Stack Development, Human-Web Interaction. "Surfing through the ocean that is Deep Learning."<br><br>~ Mohammed Omer</p>
                             <p class=responsive-mode>I have a keen interest in Artificial Intelligence, MERN - Stack Development, Human-Web Interaction. "Surfing through the ocean that is Deep Learning."<br><br>~ Mohammed Omer</p>
                             <a class=theme-btn href=assets/pdf/Resume_MohammedOmer.pdf download="">Download Resume</a>
-                            <a class=theme-btn href="https://mohammedomer.vip/case-studies/">Browse Case studies</a></div>
+                            <a class=theme-btn href="https://mohammedomer.vip/assets/pdf/omer-journey.pdf">Download My Journey</a></div>
                     </div>
                 </section>
                 <!-----
@@ -581,14 +649,14 @@
                                 <div class=experience2-box>
                                     <div class=experience2-box-header></div>
                                     <div class=experience2-box-body>
-                                        <h4>DATA ANALYST <span>2023 - PRESENT</span></h4>
+                                        <h4>DATA ANALYST <span>11/2023 - PRESENT</span></h4>
                                         <p>I work as a Data Analyst, bringing creativity, technical expertise, and a passion for design to every project. My role involves analyzing data to provide valuable insights and drive decision-making processes.</p>
                                     </div>
                                 </div>
                                 <div class=experience2-box>
                                     <div class=experience2-box-header></div>
                                     <div class=experience2-box-body>
-                                        <h4>WEB DEVELOPER<span>05/2024 - PRESENT</span></h4>
+                                        <h4>WEB DEVELOPER<span>05/2024 - 11/2024</span></h4>
                                         <p>I develop and enhance the website for Vixen Angels, featuring talented female performers. My role involves leveraging innovative technology to create an engaging platform that showcases our performers' talents and
                                             captivates the audience.</p>
                                     </div>
@@ -596,16 +664,22 @@
                                 <div class=experience2-box>
                                     <div class=experience2-box-header></div>
                                     <div class=experience2-box-body>
+                                        <h4>SOCIAL MEDIA ADMINISTRATOR <span>06/2024 - PRESENT</span></h4>
+<p>As a SMA, I manage and execute a variety of tasks. These include creating and scheduling content, analyzing media metrics, engaging with audiences, and developing strategies to enhance brand presence and engagement across multiple social media platforms.</p>
+
+                                        <!--------
                                         <h4>SOFTWARE ENGINEER <span>06/2024 - PRESENT</span></h4>
                                         <p>As a Software Engineer, I personally perform wide range of tasks. Including website development, deploying websites, managing and maintaining web content, and developing software apps & solutions tailored for desired
                                             needs.
                                         </p>
+                                        -------->
+
                                     </div>
                                 </div>
                                 <div class=experience2-box>
                                     <div class=experience2-box-header></div>
                                     <div class=experience2-box-body>
-                                        <h4>PSYCHOLOGY <span>08/2024 - PRESENT</span></h4>
+                                        <h4>PSYCHOLOGICAL COUNSELING<span>08/2024 - PRESENT</span></h4>
                                         <p>As an certified Diploma holder in Psychology, with security clearance it allows me to write extensive neutral case analysis on people with diagnosis through counselling sessions, and suggesting prevention methods
                                             & Rx Prescriptions.
                                         </p>
@@ -630,7 +704,7 @@
                                         <h4>VS CODE</h4>
                                         <div class=content-body>
                                             <h4>WEB DEVELOPMENT <span>95%</span></h4>
-                                            <p>Utilizing Python, Java, PHP, SQL, JavaScript, TCSS, and Swift for dynamic and interactive web solutions.</p>
+                                            <p>Utilizing Python, Java, PHP, SQL, JavaScript, Html, CSS for dynamic and interactive web solutions.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -754,7 +828,7 @@
                                     </div>
                                 </div>
                                 <div class="experience2-box awards-box">
-                                    <div class=experience2-box-header><a class=software-engineer-intern-link href=https://www.instagram.com/_mromer_/ style=text-decoration:underline>VIEW 63 MORE</a></div>
+                                    <div class=experience2-box-header><a class=software-engineer-intern-link href=https://www.instagram.com/_mromer_/ style=text-decoration:underline>VIEW 63 MORE!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -1026,7 +1100,7 @@
                 </section>
                 <section class=cta-sec>
                     <div class=section-header2>
-                        <h3 class=title><span>LET'S WORK</span> <span>TOGETHER</span></h3><a class=theme-btn href=/contact>CONTACT NOW</a></div>
+                        <h3 class=title><span>LET'S WORK</span> <span>TOGETHER</span></h3><a class=theme-btn href=/contact>LETS CONNECT</a></div>
                     <div class="about-bottom-content-wrap cta-content">
                         <div class=img-box>
                             <div class=img-box-inner><img alt=About src=images/omer-fd-umbrella.JPG data-jarallax-element="-20 0"></div>
