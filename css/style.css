@@ -465,7 +465,7 @@ img {
     height: 12px;
     border-radius: 50%;
     display: block;
-    background: #00b803
+    background: #3cff00
 }
 
 .available-status::after {
@@ -2682,4 +2682,8 @@ img {
 
 .blur-image:hover {
     filter: blur(0)
+}
+
+body {
+    cursor: none; /* Hides the cursor */
 }
